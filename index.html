@@ -8,62 +8,348 @@
 
     <title>All Rounder</title>
 
+    <!--    bootstrap css-->
     <link rel="stylesheet" href="css/BootstrapCSS/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/BootstrapCSS/bootstrap.css">
 
-    <script src="https://kit.fontawesome.com/f6058625b0.js"></script>
+    <!--slick slider css-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <!--custom css-->
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
-    <header>
-        <div class="header-top">
-            <section class="container">
-                <div class="row">
-                    <div class="col-sm-6 call-and-email">
-                        <p class="call">Call Us: xxxxx xxxxxxxxxx</p>
-                        <p>Email Us: <a href="mailTo:contact@mydomain.com" class="email">contact@mydomain.com</a></p>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="search-input float-right">
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control search-input-form" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp"><a href="#"><i
-                                            class="fas fa-search search-icon"></i></a>
-                                </div>
-                            </form>
-                        </div>
+<!--start of header section-->
+<header>
+    <div class="header-top">
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-6 call-and-email">
+                    <p class="call">Call Us: xxxxx xxxxxxxxxx</p>
+                    <p>Email Us: <a href="mailTo:contact@mydomain.com" class="email">contact@mydomain.com</a></p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="search-input float-right">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control search-input-form" id="search"
+                                       aria-describedby="emailHelp"><a href="#"><i
+                                    class="fas fa-search search-icon"></i></a>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="header-menu-bar">
-            <section class="container">
-                <div class="row">
-                    <nav class="col-sm-12 menu-bar">
+            </div>
+        </section>
+    </div>
+    <div class="header-menu-bar" id="sticker">
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-12 menu-bar">
+                    <nav class="navbar navbar-expand-lg navbar-dark container">
                         <div class="logo">
-                            <a class="" href="#">ALLROUNDER</a><br>
+                            <a class="navbar-brand" href="#"><span>A</span>LLROUNDER</a>
                             <small>Free PSD Website Template</small>
                         </div>
-                        <div class="menu-links float-right">
-                            <ul class="menu-link-list">
-                                <li><a href="#">HOMEPAGE</a><small>Some Text</small></li>
-                                <li><a href="#">STYLE DEMO</a><small>Some Text</small></li>
-                                <li><a href="#">FULL WIDTH</a><small>Some Text</small></li>
-                                <li><a href="#">PORTFOLIO</a><small>Some Text</small></li>
-                                <li><a href="#">GALLERY</a><small>Some Text</small></li>
-                                <li><a href="#">DROPDOWN</a><small>Some Text</small></li>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse menu-links" id="navbarNav">
+                            <ul class="navbar-nav menu-link-list">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">HOMEPAGE<span
+                                            class="sr-only">(current)</span></a>
+                                    <small>Some Text</small>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">STYLE DEMO</a>
+                                    <small>Some Text</small>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FULL WIDTH</a>
+                                    <small>Some Text</small>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PORTFOLIO</a>
+                                    <small>Some Text</small>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">GALLERY</a>
+                                    <small>Some Text</small>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">DROPDOWN</a>
+                                    <small>Some Text</small>
+                                </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
+            </div>
+        </section>
+    </div>
+</header>
+<!--end of header section-->
+
+
+<!--start of main section-->
+<main>
+    <section class="section-main">
+        <div class="img-slider">
+            <section class="container-fluid">
+                <div class="row">
+                    <figure class="col-sm-12 slider-custom-murgin-bottom">
+                        <div class="single-item">
+                            <div><img src="img/1.jpg" alt="One"></div>
+                            <div><img src="img/2.jpg" alt="Two"></div>
+                            <div><img src="img/3.jpg" alt="Three"></div>
+                            <div><img src="img/4.jpg" alt="Fore"></div>
+                            <div><img src="img/5.jpg" alt="Five"></div>
+                        </div>
+                    </figure>
+                </div>
             </section>
         </div>
-    </header>
+        <div class="main-heding-text">
+            <section class="container">
+                <p class="text-center">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam
+                    erat. In fringilla massa ut nisi ullamcorper pellentesque „</p>
+                <img class="img-fluid devider-img" src="img/Splitter.png" alt="Splitter">
+            </section>
+        </div>
+        <div class="main-thumbnails">
+            <section class="container">
+                <div class="row all-thumnails">
+                    <figure class="col-sm-3 col-12">
+                        <img class="img-fluid thumbnail-img" src="img/thum1.jpg" alt="thum1">
+                        <div class="thumbnails-text">
+                            <h3>Indonectetus facilis</h3>
+                            <p>Dignissimmorbi rhoncus sed netus ligula conseque netus nulla aliquat id dui fermentumnec.
+                            </p>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-3 col-12">
+                        <img class="img-fluid thumbnail-img" src="img/thum2.jpg" alt="thum2">
+                        <div class="thumbnails-text">
+                            <h3>Indonectetus facilis</h3>
+                            <p>Dignissimmorbi rhoncus sed netus ligula conseque netus nulla aliquat id dui fermentumnec.
+                            </p>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-3 col-12">
+                        <img class="img-fluid thumbnail-img" src="img/thum3.jpg" alt="thum3">
+                        <div class="thumbnails-text">
+                            <h3>Indonectetus facilis</h3>
+                            <p>Dignissimmorbi rhoncus sed netus ligula conseque netus nulla aliquat id dui fermentumnec.
+                            </p>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-3 col-12">
+                        <img class="img-fluid thumbnail-img" src="img/thum4.jpeg" alt="thum4">
+                        <div class="thumbnails-text">
+                            <h3>Indonectetus facilis</h3>
+                            <p>Dignissimmorbi rhoncus sed netus ligula conseque netus nulla aliquat id dui fermentumnec.
+                            </p>
+                        </div>
+                    </figure>
+                </div>
+                <img class="img-fluid devider-img" src="img/Splitter.png" alt="Splitter">
+            </section>
+        </div>
+        <div class="section-dolor">
+            <section class="container">
+                <div class="row">
+                    <figure class="col-sm-6 col-12">
+                        <div class="dolor-header">
+                            <h2>Lorem Ipsum Dolor</h2>
+                            <a class="my-links" href="#">View More »</a>
+                        </div>
+                        <div class="row testimonials">
+                            <figure class="col-sm-6 col-12">
+                                <div class="user">
+                                    <div class="img-fluid">
+                                        <img src="./img/user-1.jpg" alt="user">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Indonectetus facilis</h3>
+                                        <p>Vestibulu maccumsan ege stibulum eu justo convallis aug ue estas aenean elit
+                                            intes que sed. Facili spede estib ulum.</p>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <div class="img-fluid">
+                                        <img src="./img/user-2.jpg" alt="user">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Indonectetus facilis</h3>
+                                        <p>Vestibulu maccumsan ege stibulum eu justo convallis aug ue estas aenean elit
+                                            intes que sed. Facili spede estib ulum.</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="col-sm-6 col-12">
+                                <div class="user">
+                                    <div class="img-fluid">
+                                        <img src="./img/user-3.jpg" alt="user">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Indonectetus facilis</h3>
+                                        <p>Vestibulu maccumsan ege stibulum eu justo convallis aug ue estas aenean elit
+                                            intes que sed. Facili spede estib ulum.</p>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <div class="img-fluid">
+                                        <img src="./img/user-4.jpg" alt="user">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Indonectetus facilis</h3>
+                                        <p>Vestibulu maccumsan ege stibulum eu justo convallis aug ue estas aenean elit
+                                            intes que sed. Facili spede estib ulum.</p>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-6 col-12">
+                        <div class="dolor-header">
+                            <h2>Lorem Ipsum Dolor</h2>
+                            <a class="my-links" href="#">View More »</a>
+                        </div>
+                        <div class="row profile">
+                            <figure class="col-sm-6 col-12">
+                                <div class="user-profile">
+                                    <img class="img-fluid user-profile-img" src="./img/user-profile-1.jpg"
+                                         alt="User Profile">
+                                    <p><strong>Name: </strong><span>John Doe</span></p>
+                                    <a class="my-links" href="#">View Profile »</a>
+                                </div>
+                            </figure>
+                            <figure class="col-sm-6 col-12">
+                                <div class="user-profile">
+                                    <img class="img-fluid user-profile-img" src="./img/user-profile-2.jpg"
+                                         alt="User Profile">
+                                    <p><strong>Name: </strong><span>John Doe</span></p>
+                                    <a class="my-links" href="#">View Profile »</a>
+                                </div>
+                            </figure>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </section>
+</main>
+<!--end of main section-->
 
+<!--start of footer section-->
+<footer>
+    <div class="footer-top">
+        <section class="container">
+            <div class="row">
+                <figure class="col-sm-3 col-12">
+                    <div class="about-us">
+                        <p class="footer-top-banner">ABOUT US</p>
+                        <img class="img-fluid" src="./img/footer-img-about.jpg" alt="Footer About Img">
+                        <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam
+                            erat. In fringilla
+                            massa ut nisi ullamcorper pellentesque. Quisque non luctus sem. </p>
+                        <a class="my-links" href="#">Read More »</a>
+                    </div>
+                </figure>
+                <figure class="col-sm-3 col-12">
+                    <div class="link-block">
+                        <p class="footer-top-banner">LINK BLOCK</p>
 
-    <script src="js/BootstrapJS/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+                        <ul>
+                            <li><i class="fas fa-angle-double-right"></i> <a href="#">Lorem ipsum dolor sit</a></li>
+                            <li><i class="fas fa-angle-double-right"></i> <a href="#">Amet consectetur</a></li>
+                            <li><i class="fas fa-angle-double-right"></i> <a href="#">Praesent vel sem id</a></li>
+                            <li><i class="fas fa-angle-double-right"></i> <a href="#">Curabitur hendrerit est</a></li>
+                            <li><i class="fas fa-angle-double-right"></i> <a href="#">Aliquam eget erat nec sapien</a>
+                            </li>
+                            <li><i class="fas fa-angle-double-right"></i> <a href="#">Cras id augue nunc</a></li>
+                            <li><i class="fas fa-angle-double-right"></i> <a href="#">In nec justo non</a></li>
+                            <li><i class="fas fa-angle-double-right"></i> <a href="#">Vivamus mollis enim ut</a></li>
+                            <li><i class="fas fa-angle-double-right"></i> <a href="#">Curabitur hendrerit est</a></li>
+                        </ul>
+                    </div>
+                </figure>
+                <figure class="col-sm-3 col-12">
+                    <div class="from-the-blog">
+                        <p class="footer-top-banner">FROM THE BLOG</p>
+                        <div class="text-from-blog">
+                            <p class="post-title">Post Title</p>
+                            <span>Friday, 6th April 2000</span>
+                            <p class="post-text">Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a
+                                tellus consequat
+                                imperdiet.</p>
+
+                            <a class="my-links" href="#">Read More »</a>
+                        </div>
+
+                        <div class="text-from-blog">
+                            <p class="post-title">Post Title</p>
+                            <span>Friday, 6th April 2000</span>
+                            <p class="post-text">Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a
+                                tellus consequat
+                                imperdiet.</p>
+
+                            <a class="my-links" href="#">Read More »</a>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="col-sm-3 col-12">
+                    <div class="contact-us">
+                        <p class="footer-top-banner">CONTACT US</p>
+
+                        <div class="contact">
+                            <p>Tel: xxxxx xxxxxxxxxx</p>
+                            <p>Fax: xxxxx xxxxxxxxxx</p>
+                            <p>Email: <a class="my-links" href="mailto:contact@mydomain.com">contact@mydomain.com</a>
+                            </p>
+                        </div>
+
+                        <div class="newsletter">
+                            <p class="footer-top-banner">NEWSLETTER</p>
+                            <form class="contact-from">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                                           placeholder="Enter email">
+                                </div>
+                                <button type="submit" class="btn btn-primary my-btn">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </div>
+    <div class="footer-bottom">
+        <section class="container">
+            <div class="copy-right">
+                <p>Copyright © 2013 - All Rights Reserved - <a class="my-links" href="#">Domain Name</a></p>
+                <p>Template by <a class="my-links" href="#">OS</a> Templates</p>
+            </div>
+        </section>
+    </div>
+</footer>
+<!--end of footer section-->
+
+<script src="https://kit.fontawesome.com/f6058625b0.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/BootstrapJS/bootstrap.js"></script>
+<script src="js/custom.js"></script>
 </body>
 
 </html>
